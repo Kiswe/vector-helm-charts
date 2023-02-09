@@ -413,6 +413,14 @@ readinessProbe: {}
   #   path: /health
   #   port: api
 
+serviceMonitor:
+  jobLabel: null
+  namespace: null
+  namespaceSelector: {}
+  annotations: {}
+  additionalLabels: {}
+  endpoints: []
+
 # Configure a PodMonitor for Vector, requires the PodMonitor CRD to be installed.
 podMonitor:
   # podMonitor.enabled -- If true, create a PodMonitor for Vector.
